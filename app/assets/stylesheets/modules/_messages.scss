@@ -7,14 +7,6 @@
   display: flex;
 }
 
-$white: #ffffff;
-$blue: #38aef0;
-
-@mixin clearfix() {
-  display: flex;
-  justify-content: space-between;
-}
-
 .side-bar {
   width: 300px;
   background-color: #253141;
