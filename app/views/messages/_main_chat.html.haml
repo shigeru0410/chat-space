@@ -1,0 +1,23 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-info__group
+      .chat-main__group-info__group__name rapper
+      %ul.chat-main__group-info__group__list
+        Menber：
+        %li.chat-main__group-info__group__member lilpump
+        %li.chat-main__group-info__group__member asaprocky
+    = link_to "Edit", "#", class: "chat-main__group-info__editbtn" 
+  .chat-main__message-list
+    .middle-items
+      .middle-items__info
+        .middle-items__info__name lilpump
+        .middle-items__info__date 2020/06/27
+      .middle-items__message oh
+  .chat-main__message-form
+    %from.bottom-items
+      .bottom-items__new-message
+        %input.bottom-items__new-message__text{"placeholder": "type a message", "type": "text"}
+        %label{class: "bottom-items__new-message__image"}
+          = icon('far', 'image', class: "bottom-items__new-message__image__icon")
+          %input{type: "file", class: "bottom-items__new-message__image__btn"}
+      %input.bottom-items__submitbtn{"type": "submit", "value": "Send"}
