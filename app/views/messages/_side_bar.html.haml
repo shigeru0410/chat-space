@@ -5,14 +5,15 @@
         = current_user.name
       %ul.top-items__btns
         %li
-          = link_to "#" do
+          = link_to new_group_path do
             = icon('far', 'edit', class: "top-items__btns--icon")
         %li
           = link_to edit_user_path(current_user) do
             = icon('fas', 'cog', class: "top-items__btns--icon")
   .side-bar__group-list
-    = link_to "#", class: "side-bar__group-list__box" do
-      .side-bar__group-list__box__group-name
-        rapper
-      .side-bar__group-list__box__group-message
-        oh
+    - current_user.groups.each do |group|
+      = link_to "#", class: "side-bar__group-list__box" do
+        .side-bar__group-list__box__group-name
+          = group.name
+        .side-bar__group-list__box__group-message
+          メッセージはまだありません
