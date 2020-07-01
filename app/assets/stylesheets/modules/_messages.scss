@@ -21,6 +21,10 @@
       color: $white;
       @include clearfix();
       align-items: center;
+      &__name {
+        font-size: 16px;
+        font-weight: bold;
+      }
       &__btns {
         display: flex;
         justify-content: end;
