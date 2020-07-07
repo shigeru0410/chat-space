@@ -41,6 +41,7 @@
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 0px 20px ;
+    overflow: scroll;
     &__box {
       padding: 20px 0px 40px;
       text-decoration: none;
@@ -98,6 +99,7 @@
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
     padding: 35px 40px 0px;
+    overflow: scroll;
     .middle-items {
       margin-bottom: 46px;
       &__info {
