@@ -7,5 +7,5 @@
   .middle-items__message
     - if message.content.present?
       %p.middle-items__message__text
-        = message.content
+        = safe_join(message.content.split("\n"),tag(:br)) 
     = image_tag message.image.url, class: 'middle-items__message__image' if message.image.present?
